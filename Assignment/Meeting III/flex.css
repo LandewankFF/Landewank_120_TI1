@@ -1,0 +1,36 @@
+.flex-container {
+    display: flex;
+    padding: 20px;
+    background-color: #1e90ff;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.flex-direction {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #186ec4;
+}
+.flex-direction div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.flex-warp{
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #68a6e4;
+}
+.flex-warp div{
+    background-color: #0fee0f;
+    margin: 10px;
+    padding: 20px;
+}
