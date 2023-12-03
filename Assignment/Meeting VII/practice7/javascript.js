@@ -1,1 +1,0 @@
-// Parsing data menggunakan jQuery
