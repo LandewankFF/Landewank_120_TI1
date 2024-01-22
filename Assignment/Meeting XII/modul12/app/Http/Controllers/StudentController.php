@@ -67,4 +67,10 @@ class StudentController extends Controller
         $request->session()->flash('pesan','Perubahan data berhasil');
         return redirect()->route('student.show',['student' => $student->id]);
     }
+    public function destroy(Request $request, Student $student)
+    {
+        $student->delete();
+        $request->session()->flash('pesan','Hapus data berhasil');
+        return redirect()->route('student.index');
+    }
 }

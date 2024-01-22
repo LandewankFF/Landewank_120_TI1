@@ -17,7 +17,7 @@
                     <h1 class="h2 mr-auto">Biodata {{$student->name}}</h1>
                     <a href="{{ route('student.edit',['student' => $student->id]) }}" class="btn btn-primary">Edit
                     </a>
-                    <form action="" method="POST">
+                    <form action="{{ route('student.destroy',['student'=>$student->id]) }}" method="POST">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-danger ml-3">Hapus</button>
